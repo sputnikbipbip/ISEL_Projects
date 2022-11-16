@@ -1,0 +1,10 @@
+all: solar 
+
+app.o: app.c 
+	gcc -c -g app.c 
+
+solar: app.o 
+	gcc app.o -l jansson -l container -o solar -L. 
+
+clean:
+	rm *.o

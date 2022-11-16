@@ -1,0 +1,26 @@
+P16 assembler v1.3.99 (Sep 11 2019)	mul.lst	Fri Apr 10 16:24:58 2020
+
+Sections
+Index   Name            Addresses       Size
+0       .text           0000 - 000F     0010 16
+
+Symbols
+Name                    Type      Value      Section
+multiply                LABEL     0000 0     .text
+while                   LABEL     0006 6     .text
+while_end               LABEL     000C 12    .text
+
+Code listing
+   1           	
+   2          			.text	
+   3           		multiply:
+   4 0000 02 60			mov r2, 0
+   5 0002 11 A0			add r1, r1, 0
+   6 0004 03 40			bzs while_end
+   7           		while:
+   8 0006 A2 80			add r2, r2, r1
+   9 0008 91 A8			sub r1, r1, 1
+  10 000A FD 47			bzc while
+  11           		while_end:
+  12 000C 00 B1			mov r0, r2
+  13 000E 0F B7			mov pc, lr

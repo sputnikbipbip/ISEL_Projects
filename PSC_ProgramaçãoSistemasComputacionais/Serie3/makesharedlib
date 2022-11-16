@@ -1,0 +1,16 @@
+all: libcontainer.so 
+
+libcontainer.so: url_data.o func.o app.o 
+	gcc -shared url_data.o func.o app.o -l jansson -l curl -o libcontainer.so
+
+url_data.o: url_data.c
+	gcc -c -g url_data.c -fPIC
+
+func.o: func.c
+	gcc -c -g func.c -fPIC	
+
+app.o: app.c 
+	gcc -c -g app.c -fPIC
+
+clean:
+	rm *.o
