@@ -1,0 +1,39 @@
+{
+  "name": "web-app-project-g_11",
+  "version": "1.0.0",
+  "description": "web-app-project-g_11 created by GitHub Classroom Group 11 members: -46061 Manuel Silva -45827 Daniel Azevedo",
+  "main": "borga-server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isel-leic-pi/web-app-project-g_11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isel-leic-pi/web-app-project-g_11/issues"
+  },
+  "homepage": "https://github.com/isel-leic-pi/web-app-project-g_11#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "eslint": "^8.2.0",
+    "jest": "^27.3.1",
+    "jest-openapi": "^0.14.1",
+    "supertest": "^6.1.6"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "hbs": "^4.2.0",
+    "node-fetch": "^2.6.6",
+    "passport": "^0.5.2",
+    "swagger-ui-express": "^4.1.6",
+    "yamljs": "^0.3.0"
+  }
+}

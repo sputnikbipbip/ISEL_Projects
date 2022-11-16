@@ -1,0 +1,25 @@
+<div class="col-sm-10">
+    <h2>Game Details</h2>
+    <p>Id (Atlas): {{id}}</p>
+    <p>Name: {{name}}</p>
+    <p>Description: {{description}}</p>
+    <p><a href={{url}}>Atlas link</a></p>
+    <p><a href={{image_url}}>Image</a></p>
+    <img src={{image_url}}>
+    <p>Mechanics:</p>
+    <ul>
+        {{#each mechanics}}
+
+        <li>{{name}}</li>
+
+        {{/each}}
+    </ul>
+    <p>Categories</p>
+    <ul>
+        {{#each categories}}
+
+        <li>{{name}}</li>
+
+        {{/each}}
+    </ul>
+</div>

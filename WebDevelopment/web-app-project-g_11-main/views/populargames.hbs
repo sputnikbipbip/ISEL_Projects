@@ -1,0 +1,21 @@
+<div class="col-sm-10">
+    <h2>Popular Games, provided by Atlas API</h2>
+    <table class="table table-hover border border-secondary">
+        <thead>
+            <tr>
+                <th scope="col">Game name</th>
+                <th scope="col">GameInfo</th>
+                <th scope="col">Full info (Atlas page)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each populargames}}
+            <tr>
+                <td>{{name}}</td>
+                <td><a href="/games/{{id}}">here</a></td>
+                <td><a href="{{url}}">Atlas</a></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

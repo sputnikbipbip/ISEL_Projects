@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chess4Android</string>
+    <string name="fetch_puzzle">Obter Puzzle</string>
+    <string name="about_group">Grupo: 28</string>
+    <string name="about_creators">Criado Por:\n44867 António Eusébio\n45827 Daniel Azevedo\n47255 Gonçalo Silva</string>
+    <string name="about_menu">Acerca de</string>
+    <string name="about_credit">Api usada neste projeto</string>
+    <string name="fetch_error">Não foi possível obter o Puzzle</string>
+    <string name="prev_col_wrong">Esse não é o movimento correcto</string>
+    <string name="prev_row_wrong">Não é o movimento correcto, mas está perto</string>
+    <string name="curr_col_wrong">Peça correcta mas não é esse movimento</string>
+    <string name="curr_row_wrong">Quase, peça correcta mas linha errada</string>
+    <string name="currect_move">Esse é o movimento correcto!</string>
+    <string name="puzzle_complete">Puzzle completado</string>
+    <string name="puzzle_already_completed">Puzzle já está completado</string>
+    <string name="resolve_again">Resolver novamente</string>
+    <string name="show_solution">Mostrar solução</string>
+    <string name="game_button">Começar Jogo</string>
+    <string name="draw">Empate</string>
+    <string name="Quit">Desistir</string>
+    <string name="whitePLayer">O Jogador branco ganhou!!!</string>
+    <string name="blackPlayer">O jogador preto ganhou!!!</string>
+    <string name="game_quit">Desistiu do jogo.</string>
+    <string name="game_drawed">Foi decidido empate</string>
+    <string name="game_drawed_message">Deseja empatar ?</string>
+    <string name="game_quit_message">Decerteza que queres desistir ?</string>
+    <string name="game_drawed_title">Empatar jogo</string>
+    <string name="game_quit_title">Desistir de jogo</string>
+    <string name="game_operation_cancelled">Operação cancelada</string>
+    <string name="no_button">Não</string>
+    <string name="yes_button">Sim</string>
+    <string name="game_ended">O jogo terminou</string>
+</resources>

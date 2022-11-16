@@ -1,0 +1,19 @@
+<script src="/delete-game.js" type="text/javascript"></script>
+
+<div class="col-sm-10">
+    <button onclick="location.href = '/users/{{owner}}/groups';" id="myButton">All Groups</button>
+    <h2>Grupo {{name}}</h2>
+    <p>Description: {{description}}</p>
+    <p>Games:</p>
+    <button onclick="location.href = '/users/{{owner}}/groups/{{id}}/edit';" id="myButton">Edit</button>
+    <button onclick="location.href = '/users/{{owner}}/groups/{{id}}/addgame';" id="myButton">Add Game</button>
+    <ul>
+        {{#each games}}
+        <li>
+            <p><button class="btn btn-danger" data-game-id="{{id}}">DELETE</button></p>
+            <p>Name: {{name}}</p>
+            <p><a href="/gameinfo/{{id}}">Full info</a></p>
+        </li>
+        {{/each}}
+    </ul>
+</div>

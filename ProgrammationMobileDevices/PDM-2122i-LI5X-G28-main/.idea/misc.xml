@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/anton/Downloads/Chess4Android/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/Nova pasta/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_game.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/Nova pasta/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/Nova pasta/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_puzzle.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/repo/PDM-2122i-LI5X-G28/app/src/main/res/drawable/ic_black_knight.xml" value="0.1" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/repo/PDM-2122i-LI5X-G28/app/src/main/res/drawable/ic_lichess_icon.xml" value="0.1" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/repo/PDM-2122i-LI5X-G28/app/src/main/res/layout-land/activity_about.xml" value="0.11022927689594356" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/repo/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_about.xml" value="0.15307971014492755" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/repo/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/repo/PDM-2122i-LI5X-G28/app/src/main/res/menu/menu_main_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/anton/OneDrive/Documentos/aulas/PDM/repo/PDM-2122i-LI5X-G28/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/drawable/history_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/drawable/ic_black_pawn.xml" value="0.3828125" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/drawable/ic_history.xml" value="0.3828125" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/drawable/ic_lichess_icon.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/drawable/ic_white_rook.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/drawable/list_item_background.xml" value="0.3685185185185185" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout-land/activity_about.xml" value="0.446875" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout-land/activity_game.xml" value="0.4015625" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout-land/activity_resolved.xml" value="0.31040564373897706" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_about.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_game.xml" value="0.25" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_history.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_puzzle.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout/activity_resolved.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout/game_history_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/layout/item_history_view.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/PDM-2122i-LI5X-G28/app/src/main/res/menu/menu_main_activity.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

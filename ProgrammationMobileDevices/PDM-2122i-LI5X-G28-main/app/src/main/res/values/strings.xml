@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Chess4Android</string>
+    <string name="fetch_puzzle">Fetch Puzzle</string>
+    <string name="about_course" translatable="false">LEIC PDM 21/22</string>
+    <string name="about_group">Group: 28</string>
+    <string name="about_creators">Created By:\n44867 António Eusébio\n45827 Daniel Azevedo\n47255 Gonçalo Silva</string>
+    <string name="about_menu">About</string>
+    <string name="lichess_icon" translatable="false">Lichess icon</string>
+    <string name="about_credit">Api used on this project:</string>
+    <string name="fetch_error">Could not fetch Puzzle</string>
+    <string name="prev_col_wrong">That is not the right move</string>
+    <string name="prev_row_wrong">Not the right move, but close</string>
+    <string name="curr_col_wrong">Correct piece but not the right move</string>
+    <string name="curr_row_wrong">Almost there, piece is right but the row is wrong</string>
+    <string name="currect_move">That is the right move!</string>
+    <string name="puzzle_complete">Puzzle complete</string>
+    <string name="puzzle_already_completed">Puzzle is already completed</string>
+    <string name="resolve_again">Resolve again</string>
+    <string name="show_solution">Show solution</string>
+    <string name="game_button">Start Game</string>
+    <string name="draw">draw</string>
+    <string name="Quit">Quit</string>
+    <string name="whitePLayer">The white player won!!</string>
+    <string name="blackPlayer">The black player won!!</string>
+    <string name="game_quit">The game was canceled</string>
+    <string name="game_drawed">The games was draw</string>
+    <string name="game_drawed_message">Do you want to draw ?</string>
+    <string name="game_quit_message">Are you sure you want chicken out ? </string>
+    <string name="game_drawed_title">Draw game</string>
+    <string name="game_quit_title">Quit game</string>
+    <string name="game_operation_cancelled">Operation cancelled</string>
+    <string name="no_button">No</string>
+    <string name="yes_button">Yes</string>
+    <string name="game_ended">The game has ended</string>
+</resources>

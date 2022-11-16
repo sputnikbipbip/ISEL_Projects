@@ -1,0 +1,380 @@
+openapi: 3.0.2
+info:
+  title: Borga
+  description: Web API to manage games.
+  version: 2.0.0
+paths:
+  /api/games/{gameID}:
+    get:
+      tags:
+        - get a game by id
+      summary: searches a game by the id
+      operationId: search game
+      description: |
+        The game id is required
+      parameters:
+        - in: path
+          name: gameID
+          required: true
+          description: Insert game id.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A game
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+        '400':
+          description: bad input parameter
+        '404': 
+          description: resource not found
+        '502': 
+          description: bad gateway
+  /api/users/{username}/groups:
+    post:
+      security:
+        - bearerAuth: []
+      tags:
+        - create a new group
+      summary: create a new group
+      operationId: search most popular games
+      parameters:
+        - in: path
+          name: username
+          required: true
+          description: Username of the client.
+          schema:
+            type: string
+      requestBody:
+        $ref: '#/components/requestBodies/search_most_popular_gamesGroup'
+      responses:
+        '201':
+          description: the request was a success
+        '400':
+          description: bad input parameter
+        '403':
+          description: doesnt have the required authorization
+        '409': 
+          description: resource is already defined 
+    get:
+      security:
+        - bearerAuth: []
+      tags:
+        - get user groups
+      summary: get all groups from the user
+      operationId: search groups
+      description: |
+        Username is required
+      parameters:
+        - in: path
+          name: username
+          required: true
+          description: Client username
+          schema:
+            type: string
+      responses:
+        '200':
+          description: All user groups
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Group'
+        '400':
+          description: bad input parameter
+        '403':
+          description: doesnt have the required authorization
+        '404': 
+          description: resource not found
+  /api/users/{username}/groups/{GID}:
+    post:
+      security:
+        - bearerAuth: []
+      tags:
+        - edit group
+      summary: edit a group
+      operationId: edit group
+      parameters:
+        - in: path
+          name: username
+          required: true
+          description: Client username
+          schema:
+            type: string
+        - in: path
+          name: GID
+          required: true
+          description: Group id
+          schema:
+            type: string
+      requestBody:
+        $ref: '#/components/requestBodies/search_most_popular_gamesGroup'
+      responses:
+        '201':
+          description: the request was a success
+        '400':
+          description: bad input parameter
+        '403':
+          description: doesnt have the required authorization
+        '409': 
+          description: resource is already defined 
+    delete:
+      security:
+        - bearerAuth: []
+      tags:
+        - delete group
+      summary: deletes group
+      parameters:
+        - in: path
+          name: username
+          required: true
+          description: Client username
+          schema:
+            type: string
+        - in: path
+          name: GID
+          required: true
+          description: Group id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: group was deleted successfully
+        '202':
+          description: operation accepted
+        '204':
+          description: the specified group is not in the server
+        '403':
+          description: doesnt have the required authorization
+    get:
+      security:
+        - bearerAuth: []
+      tags:
+        - get group
+      summary: get group
+      operationId: get group from user
+      parameters:
+        - in: path
+          name: username
+          required: true
+          description: Client username
+          schema:
+            type: string
+        - in: path
+          name: GID
+          required: true
+          description: Group id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: group with groupID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Group'
+        '400':
+          description: bad input parameter
+        '404': 
+          description: resource not found
+  /api/populargames:
+    get:
+      tags:
+        - most popular games
+      summary: searches for the most popular games
+      operationId: get most popular games 
+      description: >
+        There is an optional query parameter to limit the number of games
+        returned
+      parameters:
+        - in: query
+          name: limit
+          description: max number of games to return
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+      responses:
+        '200':
+          description: list of most popular games
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Game'
+        '400':
+          description: bad input parameter
+        '404': 
+          description: resource not found
+  /api/users/{username}/groups/{GID}/games:
+    post:
+      security:
+        - bearerAuth: []
+      tags:
+        - add game to group
+      summary: adds a game to the specified group
+      operationId: add game to group
+      parameters:
+        - in: path
+          name: username
+          required: true
+          description: Client username
+          schema:
+            type: string
+        - in: path
+          name: GID
+          required: true
+          description: Group id
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - id
+              properties:
+                id:
+                  type: string
+        description: Game to be added
+      responses:
+        '201':
+          description: the game was added with success
+        '403':
+          description: doesnt have the required authorization
+        '400':
+          description: bad input parameter
+        '409': 
+          description: resource is already defined 
+  /api/users/{username}/groups/{GID}/games/{id}:
+    delete:
+      security:
+        - bearerAuth: []
+      tags:
+        - delete game from group
+      summary: deletes game from group
+      parameters:
+        - in: path
+          name: username
+          required: true
+          description: Client username
+          schema:
+            type: string
+        - in: path
+          name: GID
+          required: true
+          description: Group id
+          schema:
+            type: string
+        - in: path
+          name: id
+          required: true
+          description: game id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: game was deleted successfully
+        '202':
+          description: operation accepted
+        '204':
+          description: the specified game is not in the server
+        '403':
+          description: doesnt have the required authorization
+  /api/users:
+    post:
+      tags:
+        - create new user
+      summary: create user
+      operationId: creates a new user
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+                - email
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+        description: username of the new user
+      responses:
+        '201':
+          description: the user was created with success
+        '400':
+          description: bad input parameter
+        '409': 
+          description: resource is already defined
+components:
+  requestBodies:
+    search_most_popular_gamesGroup:
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - name
+              - description
+            properties:
+              name:
+                type: string
+              description:
+                type: string
+      description: The group to create.
+  securitySchemes:
+    bearerAuth:            
+      type: http
+      scheme: bearer
+  schemas:
+    Game:
+      type: object
+      required:
+        - id
+        - name
+        - url
+        - rating
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54
+        name:
+          type: string
+          example: Super Tramp
+        url:
+          type: string
+          format: url
+          example: www.localhost:3000/api/mostpopulargames
+        rating:
+          type: integer
+          example: 4.069303902727479
+    Group:
+      type: object
+      properties:
+        groupID:
+          type: string
+          format: uuid
+          example: 1
+        userID:
+          type: string
+          format: uuid
+          example: 12b9a1d9-d6aa-4f15-a50d-3081f3917b88
+        groupName:
+          type: string
+          example: Batalha Naval
+        description:
+          type: string
+          example: Todos os jogos de batalha naval
+        games:
+          type: array
+          items:
+            $ref: '#/components/schemas/Game'

@@ -1,0 +1,11 @@
+teste
+teste
+teste
+
+Expected:
+	~/test_input_file.txt(3)
+
+	processed: 1
+	total found files: 1
+	total word ocorrences: 3
+
