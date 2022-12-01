@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">G18_design</string>
+    <string name="rect">Rect</string>
+    <string name="line">Line</string>
+    <string name="pixel">Pixel</string>
+    <string name="circle">Circle</string>
+    <string name="reset">RESET</string>
+    <string name="load">LOAD</string>
+    <string name="save">SAVE</string>
+</resources>
