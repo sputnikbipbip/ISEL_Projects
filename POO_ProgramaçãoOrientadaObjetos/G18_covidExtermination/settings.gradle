@@ -1,0 +1,2 @@
+rootProject.name='G18_covidExtermination'
+include ':app'
